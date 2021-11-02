@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Stonks</string>
+    <string name="course_name">Courses</string>
+    <string name="activity_description">Select your course to start learning!</string>
+    <string name="submit">submit</string>
+
+
+    <string-array name="course1Text1">
+        <item>Investing is the act of allocating capital, usually money, with the expectation of generating an income or profit.</item>
+        <item>Capital can be raised by entrepreneurs, businesses and Governments to meet their various funding requirements. This could include funding a new start-up, an existing business, new product development or to meet Government spending objectives.</item>
+        <item>The financial system plays a key role as an intermediary, facilitating the flow of capital from investors and those seeking to raise or borrow funds. This includes the share market, fund managers and banks.</item>
+
+    </string-array>
+</resources>

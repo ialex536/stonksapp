@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:layout_editor_abosluteX="8dp"
+    tools:layout_editor_abosluteY="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_onboard_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_onboard_playmdpi"
+            android:contentDescription="APP FEATURE" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_onboard_item"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:fontFamily="@font/sofia_pro"-->
+<!--            android:text="Choose a Course to learn"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textFontWeight="600"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textAlignment="center"/>-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

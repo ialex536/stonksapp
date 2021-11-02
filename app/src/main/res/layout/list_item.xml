@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/list_item_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Go"
+                android:textStyle="bold"
+                android:fontFamily="@font/sofia_pro"
+                android:textSize="25sp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:id="@+id/list_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Course Title"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sofia_pro"
+                    android:textFontWeight="700"
+                    android:textSize="26sp"/>
+                <TextView
+                    android:id="@+id/list_item_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/open_sans"
+                    android:textFontWeight="600"
+                    android:textSize="15sp"
+                    android:text="Course Description"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:theme="@style/Theme.Stonks"
+    android:background="@color/cool_white"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_quiz_question_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/tv_quiz_question_title"
+        app:layout_constraintBottom_toTopOf="@id/ll_quiz_first_row_buttons"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        android:textFontWeight="800"
+        tools:text="How much wood would a wood chuck chuck if a wood chuck could chuck wood?"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/tv_quiz_questions_remaining_count"
+        android:textSize="48sp"
+        tools:text="99"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_quiz_questions_remaining_count"
+        android:id="@+id/tv_quiz_questions_remaining"
+        android:textColor="@color/black"
+        android:text="questions\nremaining"
+        app:layout_constraintBottom_toBottomOf="@id/tv_quiz_questions_remaining_count"
+        app:layout_constraintLeft_toRightOf="@id/tv_quiz_questions_remaining_count"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_quiz_questions_remaining_count"
+        android:id="@+id/btn_quiz_submit_answer"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/Theme.Stonks"
+        android:layout_marginRight="8dp" />
+
+
+    <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="0dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:id="@+id/ll_quiz_first_row_buttons"
+    app:layout_constraintBottom_toTopOf="@id/ll_quiz_second_row_buttons"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_quiz_answer_0"
+        style="@style/Theme.Stonks"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:text="Answer 0" />
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn_quiz_answer_1"
+        tools:text="Answer 1"
+        style="@style/Theme.Stonks"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="0dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:id="@+id/ll_quiz_second_row_buttons"
+    app:layout_constraintBottom_toTopOf="@id/btn_quiz_submit_answer"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn_quiz_answer_2"
+        tools:text="Answer 2"
+        style="@style/Theme.Stonks"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_quiz_answer_3"
+        style="@style/Theme.Stonks"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:text="Answer 3" />
+
+</LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgbtn_quiz_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_quiz_question_image"
+        app:layout_goneMarginTop="8dp"
+        app:srcCompat="@drawable/ic_info"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/ic_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
